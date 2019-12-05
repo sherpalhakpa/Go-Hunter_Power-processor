@@ -1,6 +1,6 @@
 # Go-Hunter_Power-processor
 
-This program written in Go takes a program written in Hunter – Power (Language grammer: https://drive.google.com/file/d/1lXhzJVH70KI92RnhjtiwogLTwe18HOS1/view?usp=sharing), and outputs the tokens and lexemes into a new file. 
+This program written in Go takes a program written in Hunter–Power (Grammer:https://drive.google.com/file/d/1lXhzJVH70KI92RnhjtiwogLTwe18HOS1/view?usp=sharing), and outputs the tokens and lexemes into a new file. 
 ---------------------------------------------------------------------
 The program  runs like this: 
 ---------------------------------------------------------------------
@@ -29,38 +29,39 @@ The tokens in the grammar are:
 - RPAREN 
 
 
-Given the following program written in this language: 
-$x <= "hi" : 
-#d <= 12 : 
-%r <= 3.44 : 
-%k <= ( #d + #d ) ^ 1.4 : 
-WRITE "this is the program" : 
-WRITE %k 
+Given the following program written in this language: <br/>
+	$x <= "hi" : <br/>
+	#d <= 12 : <br/>
+	#d <= 12 : <br/>
+	%r <= 3.44 : <br/>
+	%k <= ( #d + #d ) ^ 1.4 : <br/>
+	WRITE "this is the program" : <br/>
+	WRITE %k <br/>
  
-The output file should look like: 
-ID[STRING]: x 
-ASSIGN 
-STRING: hi 
-COLON 
-D[INT]: d 
-ASSIGN 
-INT_CONST: 12 
-OLON 
-ID[REAL]: r 
-ASSIGN 
-REAL_CONST: 3.44 
-COLON 
-ID[REAL]: k 
-ASSIGN 
-LPAREN 
-ID[INT]: d 
-PLUS ID[INT]: d 
-RPAREN 
-POWER 
-REAL_CONST: 1.4 
-COLON 
-WRITE 
-STRING: this is the program 
-COLON 
-WRITE 
-ID[REAL]: k 
+The output file should look like: <br/>
+	ID[STRING]: x <br/>
+	ASSIGN <br/>
+	STRING: hi <br/>
+	COLON <br/>
+	D[INT]: d <br/>
+	ASSIGN <br/>
+	INT_CONST: 12 <br/> 
+	OLON <br/>
+	ID[REAL]: r <br/>
+	ASSIGN <br/>
+	REAL_CONST: 3.44 <br/> 
+	COLON <br/>
+	ID[REAL]: k <br/>
+	ASSIGN <br/>
+	LPAREN <br/>
+	ID[INT]: d <br/>
+	PLUS ID[INT]: d <br/>
+	RPAREN <br/>
+	POWER <br/>
+	REAL_CONST: 1.4 <br/>
+	COLON <br/>
+	WRITE <br/>
+	STRING: this is the program <br/>
+	COLON <br/>
+	WRITE <br/>
+	ID[REAL]: k<br/> 
